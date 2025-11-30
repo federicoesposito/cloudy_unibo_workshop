@@ -1,0 +1,82 @@
+### CLOUDY input script grid
+### author: Federico Esposito, Madrid, November 2025
+title "agn5_h400_x000"
+set save prefix "agn5_h400_x000"
+# AGN radiation field
+AGN 6.00 -1.40 -0.5 -1.0
+intensity 0.0, range 147 to 735 Ryd
+# gas conditions
+hden 4
+abundances ISM no grains
+grains ISM
+metals and grains linear 1
+# important commands for molecular chemistry
+turbulence 1 km/s
+cosmic rays background
+no grain molecules
+# stopping criteria
+stop temperature off
+stop column 23
+set nend 5000
+iterate to convergence
+# save
+save last overview ".ovr"
+save last continuum ".cont"
+save last pdr ".pdr"
+save last lines zone cumulative emergent ".emis"
+CO   2600.05m      # CO(1-0)
+CO   1300.05m      # CO(2-1)
+CO   866.727m      # CO(3-2)
+CO   650.074m      # CO(4-3)
+CO   520.089m      # CO(5-4)
+CO   433.438m      # CO(6-5)
+CO   371.549m      # CO(7-6)
+CO   325.137m      # CO(8-7)
+CO   289.041m      # CO(9-8)
+CO   260.169m      # CO(10-9)
+CO   236.549m      # CO(11-10)
+CO   216.868m      # CO(12-11)
+CO   200.218m      # CO(13-12)
+"^13CO" 2719.67m   # 13CO(1-0)
+"^13CO" 1359.86m   # 13CO(2-1)
+"^13CO" 906.599m   # 13CO(3-2)
+HCN   3381.52m     # HCN(1-0)
+HCN   1690.78m     # HCN(2-1)
+HCN   1127.22m     # HCN(3-2)
+HCN   845.428m     # HCN(4-3)
+HCN   676.373m     # HCN(5-4)
+HCN   563.665m     # HCN(6-5)
+HCN   483.168m     # HCN(7-6)
+HCN   422.796m     # HCN(8-7)
+HCO+   3360.43m    # HCO+(1-0)
+HCO+   1680.21m    # HCO+(2-1)
+HCO+   1120.18m    # HCO+(3-2)
+HCO+   840.15m     # HCO+(4-3)
+HCO+   672.144m    # HCO+(5-4)
+HCO+   560.14m     # HCO+(6-5)
+HCO+   480.147m    # HCO+(7-6)
+HCO+   420.151m    # HCO+(8-7)
+HNC   3305.75m     # HNC(1-0)
+HNC   1652.9m      # HNC(2-1)
+HNC   1101.95m     # HNC(3-2)
+HNC   826.492m     # HNC(4-3)
+HNC   661.221m     # HNC(5-4)
+HNC   551.041m     # HNC(6-5)
+HNC   472.351m     # HNC(7-6)
+HNC   413.333m     # HNC(8-7)
+C  1  609.590m     # [CI](1-0)
+C  1  370.269m     # [CI](2-1)
+C  2  157.636m     # [CII](3/2-1/2)
+O  1  63.1679m     # [OI](1-2)
+O  1  145.495m     # [OI](0-1)
+O  3  88.3323m     # [OIII](1-0)
+N  2  205.244m     # [NII](1-0)
+N  2  121.767m     # [NII](2-1)
+H  1  6562.81A     # Halpha
+H  1  4861.33A     # Hbeta
+H  1  1.87510m     # Pachen alpha
+O  3  5006.84A     # [OIII]
+N  2  6583.45A     # [NII]
+S  2  6716.44A     # [SII]
+O  1  6300.30A     # [OI]
+end of lines
