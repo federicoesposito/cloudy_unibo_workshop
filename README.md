@@ -1,7 +1,9 @@
 # cloudy_unibo_workshop
 
 Author: Federico Esposito, Bologna, November 2025
+
 Web: https://github.com/federicoesposito/cloudy_unibo_workshop
+
 Mail: f.esposito@oan.es
 
 ## Directory structure
