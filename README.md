@@ -115,5 +115,4 @@ pip install —upgrade pip
 pip install jupyter ipython ipykernel
 python -m ipykernel install —user —name=cloudy_day
 pip install numpy pandas matplotlib seaborn scipy
-``
-
+```
